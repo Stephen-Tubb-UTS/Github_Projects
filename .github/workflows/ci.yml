@@ -16,7 +16,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t task-manager:latest
+          docker build -t task-manager:latest .
 
 
       - name: Run Docker container
