@@ -20,6 +20,6 @@ jobs:
                -d '{
                   "column_id": "PROJECT_COLUMN_ID",
                   "content_type": "Issue",
-                  "content_id": ${{ github.event.issue.id }} # Corrected syntax
+                  "content_id": ${{ github.event.pull_request.id }}
                }' \
                https://api.github.com/projects/columns/PROJECT_COLUMN_ID/cards
